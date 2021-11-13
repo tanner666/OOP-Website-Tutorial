@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+      .nounderline {
+          text-decoration: none !important;
+        }
+
+      .keyword {
+          color: #40413E;
+        }
+
+      kbd {
+          background-color: #D4D5D2;
+          color: black;
+        }
+
+
+  </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+      <div class="container">
+          <a href="index.html" class="navbar-brand">Azure Cloud Website Tutorial</a>
+          
+          <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navmenu"
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navmenu">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a href="cli-tutorial.html" class="nav-link">Command Line</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="azure-tutorial.html" class="nav-link">Azure Cloud</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="docker-tutorial.html" class="nav-link text-light">Docker</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="git-tutorial.html" class="nav-link">Git</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="vi-tutorial.html" class="nav-link">Vi</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-4 text-center text-sm-start">
+      <div class="container">
+          <div class="d-sm-flex align-items-center justify-content-between">
+              <div>
+                  <h2>Docker Tutorial</h2>
+                </div>
+          </div>
+      </div>
+    </section>
+    <!-- Definition -->
+    <section class="text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-md-center">
+          <h2 class="py-2"><strong>What is Docker?</strong></h2>          
+        </div>
+        <div>
+          <p>
+            Docker is a platform for developing and testing applications in isolated environments, 
+            called containers, meaning that different applications won't interfere with one another. 
+            <a href="https://docs.docker.com/get-started/overview/" target="_blank" class="nounderline">Click here for more information</a>. 
+          </p>
+        </div>
+        <!-- Installation -->
+        <div class="d-sm-flex align-items-md-center">
+          <h2 class="py-2"><strong>Installation</strong></h2>          
+        </div>
+        <div>
+          <ol>
+            <li>
+              <a href="https://hub.docker.com/signup" target="_blank" class="nounderline">Create a Docker Hub account</a>.
+            </li>
+            <li>
+              <a href="https://docs.docker.com/get-docker/" class="nounderline" target="_blank">Install Docker Desktop</a>.
+              <ul>
+                <li>
+                  Optional: <a href="https://docs.docker.com/get-started/" target="_blank" class="nounderline">Complete the "Getting Started" module</a>.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Troubleshooting: Open Docker Desktop. If an error occurs, try updating your operating system to the most current version. 
+              If this doesn't fix it, you may need to go into your system BIOS and enable virtualization.
+              <a href="https://www.virtualmetric.com/blog/how-to-enable-hardware-virtualization" target="_blank" class="nounderline">Click for a step-by-step guide</a>.
+            </li>
+          </ol>
+        </div>
+        <!-- Common Commands -->
+        <div class="d-sm-flex align-items-md-center">
+          <h2 class="py-2"><strong>Common Commands</strong></h2>          
+        </div>
+        <div>
+          <ul>
+            <li>
+              <kbd>docker build [OPTIONS] PATH | URL| -</kbd>: Builds Docker images from a Dockerfile and a “context”. 
+              A build’s context is the set of files located in the specified PATH or URL.
+            </li>
+            <li>
+              <kbd>docker run [OPTIONS] IMAGE[:TAG] [COMMAND] [ARG...]</kbd>: Isolates a container process so that
+              it has its own file system, its own networking, and its own isolated process tree separate from the host.
+            </li>
+            <li>
+              <kbd>docker ps [OPTIONS]</kbd>: Lists containers and useful information about them.
+            </li>
+            <li>
+              <kbd>docker stop CONTAINER [CONTAINER...]</kbd>: Stops one or more running container. You can use the container ID in place of the container.
+            </li>
+            <li>
+              <kbd>docker rm [OPTIONS] CONTAINER [CONTAINER...]</kbd>: Remove one or more containers. You can use the container ID in place of the container.
+              Contianers must be stopped before than can be removed.
+            </li>
+            <li>
+              <kbd>docker-compose up</kbd>: Builds, (re)creates, starts, and attaches to containers for a service.
+            </li>
+            <li>
+              <kbd>docker-compose down</kbd>: Stops containers and removes containers, networks, volumes, and images created by <kbd>docker-compose up</kbd>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  </body>
+</html>
