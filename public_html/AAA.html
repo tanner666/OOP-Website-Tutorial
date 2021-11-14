@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docker Tutorial</title>
+    <title>AAA Tutorial</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <style>
@@ -65,7 +65,7 @@
       <div class="container">
           <div class="d-sm-flex align-items-center justify-content-between">
               <div>
-                  <h2>Docker Tutorial</h2>
+                  <h2>AAA Testing Tutorial</h2>
                 </div>
           </div>
       </div>
@@ -74,70 +74,35 @@
     <section class="text-sm-start">
       <div class="container">
         <div class="d-sm-flex align-items-md-center">
-          <h2 class="py-2"><strong>What is Docker?</strong></h2>          
+          <h2 class="py-2"><strong>What is AAA Testing?</strong></h2>          
         </div>
         <div>
           <p>
-            Docker is a platform for developing and testing applications in isolated environments, 
-            called containers, meaning that different applications won't interfere with one another. 
-            <a href="https://docs.docker.com/get-started/overview/" target="_blank" class="nounderline">Click here for more information</a>. 
+            AAA stands for Arrange-Act-Assert. It refers to the pattern that test methods should follow. <br>
+            1.) Arrange inputs and operations. Setup any required objects, variables, data, or operations for the test to work.<br>
+            2.) Act on the target behavior. Run the thing that is to be tested (like a method).<br>
+            3.) Assert expected results. Write an assert statement that says "the result should be: " and verify it's the same as the actual answer. 
           </p>
         </div>
-        <!-- Installation -->
+        <!-- Example -->
         <div class="d-sm-flex align-items-md-center">
-          <h2 class="py-2"><strong>Installation</strong></h2>          
+          <h2 class="py-2"><strong>Example</strong></h2>          
         </div>
         <div>
-          <ol>
-            <li>
-              <a href="https://hub.docker.com/signup" target="_blank" class="nounderline">Create a Docker Hub account</a>.
-            </li>
-            <li>
-              <a href="https://docs.docker.com/get-docker/" class="nounderline" target="_blank">Install Docker Desktop</a>.
-              <ul>
-                <li>
-                  Optional: <a href="https://docs.docker.com/get-started/" target="_blank" class="nounderline">Complete the "Getting Started" module</a>.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Troubleshooting: Open Docker Desktop. If an error occurs, try updating your operating system to the most current version. 
-              If this doesn't fix it, you may need to go into your system BIOS and enable virtualization.
-              <a href="https://www.virtualmetric.com/blog/how-to-enable-hardware-virtualization" target="_blank" class="nounderline">Click for a step-by-step guide</a>.
-            </li>
-          </ol>
-        </div>
-        <!-- Common Commands -->
-        <div class="d-sm-flex align-items-md-center">
-          <h2 class="py-2"><strong>Common Commands</strong></h2>          
-        </div>
-        <div>
-          <ul>
-            <li>
-              <kbd>docker build [OPTIONS] PATH | URL| -</kbd>: Builds Docker images from a Dockerfile and a “context”. 
-              A build’s context is the set of files located in the specified PATH or URL.
-            </li>
-            <li>
-              <kbd>docker run [OPTIONS] IMAGE[:TAG] [COMMAND] [ARG...]</kbd>: Isolates a container process so that
-              it has its own file system, its own networking, and its own isolated process tree separate from the host.
-            </li>
-            <li>
-              <kbd>docker ps [OPTIONS]</kbd>: Lists containers and useful information about them.
-            </li>
-            <li>
-              <kbd>docker stop CONTAINER [CONTAINER...]</kbd>: Stops one or more running container. You can use the container ID in place of the container.
-            </li>
-            <li>
-              <kbd>docker rm [OPTIONS] CONTAINER [CONTAINER...]</kbd>: Remove one or more containers. You can use the container ID in place of the container.
-              Contianers must be stopped before than can be removed.
-            </li>
-            <li>
-              <kbd>docker-compose up</kbd>: Builds, (re)creates, starts, and attaches to containers for a service.
-            </li>
-            <li>
-              <kbd>docker-compose down</kbd>: Stops containers and removes containers, networks, volumes, and images created by <kbd>docker-compose up</kbd>.
-            </li>
-          </ul>
+            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/Screenshot%202021-11-12%20204756.png">
+                <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/Screenshot%202021-11-12%20204756.png" alt="W3Schools.com" width="450" height="">
+            </a>
+            <p>
+                The image demonstrates a simple example of AAA testing. <br>
+                The function func takes a parameter named value, adds 1 to it, 
+                and returns the new value. The function func_test tests the func function by: <br>
+                1.) Arranging a variable, value = 1, that will need to be passed into func <br>
+                2.) Acting on the function by calling func(value)<br>
+                3.) Asserting that the result is the expected value of 2 (from 1 + 1) <br><br>
+                The second test function: test_func_combined shows a more concise version of AAA testing, by combining all 3 steps into
+                 one line. <br><br><br>
+
+            </p>
         </div>
       </div>
     </section>
