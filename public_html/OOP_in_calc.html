@@ -95,22 +95,35 @@
         </div>
         <!-- OOP Principles in a Calculator Program -->
         <div class="d-sm-flex align-items-md-center">
-          <h2 class="py-2"><strong>Encapsulation</strong></h2>          
+          <h2 class="py-2"><strong>Calculator Program</strong></h2>    
         </div>
         <div>
-          <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/Screenshot%202021-11-12%20204756.png">
-            <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/Screenshot%202021-11-12%20204756.png" alt="W3Schools.com" width="450" height="">
-        </a>
+          <h4><strong>Calculation Classes:</strong></h4> 
+        </div>
+        <div>
+          <div style = "position:relative;left:320px;">
+            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/Caculation%20Factory%20Calss.png">
+              <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/Caculation%20Factory%20Calss.png" width="450" height="">
+            </a>
+          </div >
+          <div style = "position:relative;left:320px;">
+            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/Caculation%20Factory%20Calss.png">
+            <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/Caculation%20Factory%20Calss.png" width="450" height="">
+            </a>
+          </div >
         <p>
-            The image demonstrates a simple example of AAA testing. <br>
-            The function func takes a parameter named value, adds 1 to it, 
-            and returns the new value. The function func_test tests the func function by: <br>
-            1.) Arranging a variable, value = 1, that will need to be passed into func <br>
-            2.) Acting on the function by calling func(value)<br>
-            3.) Asserting that the result is the expected value of 2 (from 1 + 1) <br><br>
-            The second test function: test_func_combined shows a more concise version of AAA testing, by combining all 3 steps into
-             one line. <br><br><br>
-
+            The Calculation Factory Class is a base class for the four calculation classes (addition, subtraction, multiplication, division). Although it 
+            doesn't contain any abstract methods, The Calculation Factory Class acts similar to an abstract class, in that it acts as a blueprint for 
+            the 4 calculation classes (addition, subtraction, multiplication, and division), providing methods those classes all inherit. 
+            Each calculation class, like the addition class shown above, inherits the methods of the Calculation Factory Class, allowing all 
+            4 of them to have the same methods, but for the methods to only be defined at one point in the program. The base class allows for code 
+            reusability, while also hiding what the each of its methods do from the individual calculation classes. So the 4 calculation classes can 
+            use the methods from the base class, but don't know what they do. Encapsulation is also demonstrated here, in the 4 calculation classes. Take 
+            the addition class for example. Although the addition class inherits the Calculation Factory Class's methods, it also has its own unique 
+            get_result() method. The addition class encapsulates this method, as well as the inherited ones. This get_result() method makes the class private from its base class and all 
+            other classes in the program, meaning that no other class can access the addition class's state directly, but only through its unique get_result() method.
+            Finally, polymorphism is also demonstrated in the 4 calculation classes in their different get_result() methods. Polymorphism refers to having 
+            many forms, and the get_result() method takes on a different form with the same name in each of the 4 calculation classes. 
         </p>
         </div>
       </div>
