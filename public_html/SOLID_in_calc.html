@@ -148,11 +148,34 @@
             <div>
                 <h4><strong>Single Responsibility: </strong></h4> 
             </div>
-            <div>
-                <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/AdditionClass.png">
-                  <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/AdditionClass.png" width="350" height="">
-                </a>
-              </div >
+            <style>
+                * {
+                  box-sizing: border-box;
+                }
+                
+                .column {
+                  float: left;
+                  width: 33.33%;
+                  padding: 5px;
+                }
+                
+                /* Clearfix (clear floats) */
+                .row::after {
+                  content: "";
+                  clear: both;
+                  display: table;
+                }
+                </style>
+            <div class="row">
+                <div class="column">
+                   
+                        <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/calculator_class_collapsed.png" width="350" height="">
+                </div>
+                <div class="column">
+                    
+                        <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/history_class_compressed.png" width="350" height="">
+              </div>
+            </div>
             <p>
                 Single Responsibility is demonstrated in every class of the Calculator program. The top layer Calculator class is responsible 
                 for calling the History class calculation methods and getting the values. The History class is responsible for creating and storing 
