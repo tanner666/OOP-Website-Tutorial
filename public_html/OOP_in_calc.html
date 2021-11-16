@@ -40,24 +40,24 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navmenu">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                      <a href="cli-tutorial.html" class="nav-link">Command Line</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="azure-tutorial.html" class="nav-link">Azure Cloud</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="docker-tutorial.html" class="nav-link text-light">Docker</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="git-tutorial.html" class="nav-link">Git</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="vi-tutorial.html" class="nav-link">Vi</a>
-                  </li>
-              </ul>
-          </div>
+            <ul class="navbar-nav ms-auto">
+              <li>
+                <a href="python-calculator.html" class="nav-link">Python Calculator</a>
+            </li>
+                <li class="nav-item">
+                  <a href="tips_and_tricks.html" class="nav-link">Pylint</a>
+                </li>
+                <li class="nav-item">
+                  <a href="AAA.html" class="nav-link">AAA</a>
+                </li>
+                <li class="nav-item">
+                  <a href="OOP_in_calc.html" class="nav-link text-light">OOP</a>
+                </li>
+                <li class="nav-item">
+                  <a href="SOLID_in_calc.html" class="nav-link">SOLID</a>
+                </li>
+            </ul>
+        </div>
       </div>
     </nav>
     <!-- Showcase -->
@@ -65,7 +65,7 @@
       <div class="container">
           <div class="d-sm-flex align-items-center justify-content-between">
               <div>
-                  <h2>OOP in a Calculator</h2>
+                  <h2>OOP Principles in a Calculator Program</h2>
                 </div>
           </div>
       </div>
@@ -95,41 +95,56 @@
         </div>
         <!-- OOP Principles in a Calculator Program -->
         <div class="d-sm-flex align-items-md-center">
-          <h2 class="py-2"><strong>Calculator Program</strong></h2>    
+          <h2 class="py-2"><strong>OOP Principles in the Calculator Program</strong></h2>    
         </div>
+        
         <div>
           <h4><strong>Calculation Classes:</strong></h4> 
         </div>
         <div>
-          <div style = "position:relative;left:350px;">
+          <div>
             <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/Caculation%20Factory%20Calss.png">
               <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/Caculation%20Factory%20Calss.png" width="500" height="">
             </a>
           </div >
-          <div>
-            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/Addition%20Class.png">
-              <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/Addition%20Class.png" width="350" height="">
+          <div style = "position:relative;left:550px;top:-300px">
+            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/AdditionClass.png">
+              <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/AdditionClass.png" width="350" height="">
             </a>
           </div >
-          <div style = "position:relative;left:350px;">
+          <div style = "position:relative;top:-250px">
             <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/SubtractionClass.png">
             <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/SubtractionClass.png" width="350" height="">
             </a>
           </div >
-        <p>
-            The Calculation Factory Class is a base class for the four calculation classes (addition, subtraction, multiplication, division). Although it 
-            doesn't contain any abstract methods, The Calculation Factory Class acts similar to an abstract class, in that it acts as a blueprint for 
-            the 4 calculation classes (addition, subtraction, multiplication, and division), providing methods those classes all inherit. 
-            Each calculation class, like the addition class shown above, inherits the methods of the Calculation Factory Class, allowing all 
-            4 of them to have the same methods, but for the methods to only be defined at one point in the program. The base class allows for code 
-            reusability, while also hiding what the each of its methods do from the individual calculation classes. So the 4 calculation classes can 
-            use the methods from the base class, but don't know what they do. Encapsulation is also demonstrated here, in the 4 calculation classes. Take 
-            the addition class for example. Although the addition class inherits the Calculation Factory Class's methods, it also has its own unique 
-            get_result() method. The addition class encapsulates this method, as well as the inherited ones. This get_result() method makes the class private from its base class and all 
-            other classes in the program, meaning that no other class can access the addition class's state directly, but only through its unique get_result() method.
-            Finally, polymorphism is also demonstrated in the 4 calculation classes in their different get_result() methods. Polymorphism refers to having 
-            many forms, and the get_result() method takes on a different form with the same name in each of the 4 calculation classes. 
-        </p>
+          <div style = "position:relative;left:400px;top:-563px">
+            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/MultiplicationClass.png">
+            <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/MultiplicationClass.png" width="350" height="">
+            </a>
+          </div >
+          <div style = "position:relative;left:800px;top:-851px">
+            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/DivisionClass.png">
+            <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/DivisionClass.png" width="350" height="">
+            </a>
+          </div >
+        <div style = "position:relative;top:-850px;">
+          <p>
+              1/2.) Abstraction and Interitance: The Calculation Factory Class is a base class for the four calculation classes (addition, subtraction, multiplication, division). Although it 
+              doesn't contain any abstract methods, The Calculation Factory Class acts similar to an abstract class in that it acts as a blueprint for 
+              the four calculation classes (addition, subtraction, multiplication, and division), providing methods those classes all inherit. 
+              Each calculation class, inherits the methods of the Calculation Factory Class, allowing all 
+              four of them to have the same methods, but for the methods to only be defined at one point in the program. The base class allows for code 
+              reusability, while also hiding what the each of its methods do from the individual calculation classes. So the 4 calculation classes can 
+              use the methods from the base class, but don't know what they do. <br>
+              3.) Encapsulation: Encapsulation is also demonstrated here in the four calculation classes. Take 
+              the addition class for example. The addition class encapsulates (or houses) its unique get_result() method, as well as the inherited ones. 
+              Information within the addition class cannot be accessed directly from outside of the class, but can only be accessed through these 
+              methods, specifically the get_result() method. <br>
+              4.) Polymorphism: Finally, polymorphism is also demonstrated in the four calculation classes in their different get_result() methods. Polymorphism refers to having 
+              many forms, and the get_result() method takes on a different form with the same name in each of the four calculation classes. The point of this is to organize the program, 
+              so that when any of the four calculation classes are instantiated, the result will always be returned through a method of the same name.
+          </p>
+        </div>
         </div>
       </div>
     </section>
