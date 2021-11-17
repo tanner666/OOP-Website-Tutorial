@@ -194,7 +194,7 @@
                 <h4><strong>Open/Closed: </strong></h4> 
             </div>
             <div>
-                <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/addition_class_compressed.png" width="350" height="">
+                <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/square_root%20class.png" width="350" height="">
             </div>
             <p>
                 The Open/Closed Principle is demonstrated in the calculation factory class, which serves as a base class for the calculation 
@@ -206,6 +206,14 @@
             <div>
                 <h4><strong>Liskov Substitution: </strong></h4> 
             </div>
+            <div class="row">
+                <div class="column">
+                    <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/calculation_base_compressed.png" width="350" height="">
+                </div>
+                <div class="column">
+                    <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/addition_class_compressed.png" width="350" height="">
+                </div>
+            </div>
             <p>
                 The Liskov Substitution Principle isn't extremely prevelant in this program, but it can still be seen in the calculation base class. 
                 Usually this principle deals with the ability to substitute a subclass, which has overridden methods from the base class, with the bass class, but there is no method 
@@ -215,14 +223,35 @@
             <div>
                 <h4><strong>Interface Segregation: </strong></h4> 
             </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/Caculation%20Factory%20Calss.png" width="400" height="">
+            </div>
             <p>
                 The Interface Segregation Principle is again demonstrated in the calculation base class. This base class only contains a constructor, 
-                a create method, and a convert_value_type method, all of which are utilized by all four of the calculation subclasses. Since all of the 
-                calculation subclasses use all of their inherited methods and aren't dependent on any inherited methods they don't use, 
+                a create method, and a convert_args_to_tuple_float_values method, all of which are utilized by all four of the calculation subclasses. 
+                The create method is a class method, which instantiates the calculation objects using the constructor, and the constructor 
+                uses the convert method to convert all values in the input tuple to floats. Since the create method uses the constructor and all other base class methods, and  
+                all of the calculation subclasses use the create method, the calculation subclasses aren't dependent on any inherited methods they don't use. So 
                 the Interface Segregation Principle is upheld. 
             </p>
             <div>
                 <h4><strong>Dependency Inversion: </strong></h4> 
+            </div>
+            <div class="row">
+                <div class="column">
+                   
+                    <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/calculator_get_method.png" width="350" height="">
+                </div>
+                <div class="column">
+                    
+                    <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/history_get_result_value.png" width="350" height="">
+              </div>
+              <div class="column">
+                    
+                <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/AdditionClass.png" width="350" height="">
+                
+                
+          </div>
             </div>
             <p>
                 Dependency Inversion is demonstrated by every class in the Calculator program, in that no class can directly access the 
@@ -234,6 +263,7 @@
                 method must call upon the calculation object's get_result() method to retrieve the value from within the calculation class. In this way, 
                 none of the classes, high or low level, can directly retrieve data from inside one another, and must instead call upon internal methods. 
             </p>
+            <br><br><br>
         </div>
       </section>
 

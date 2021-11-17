@@ -20,7 +20,22 @@
           background-color: #D4D5D2;
           color: black;
         }
-
+                * {
+                  box-sizing: border-box;
+                }
+                
+                .column {
+                  float: left;
+                  width: 33.33%;
+                  padding: 5px;
+                }
+                
+                /* Clearfix (clear floats) */
+                .row::after {
+                  content: "";
+                  clear: both;
+                  display: table;
+                }
 
   </style>
 
@@ -117,51 +132,67 @@
         <div>
           <h4><strong>Calculation Classes:</strong></h4> 
         </div>
-        <div>
-          <div>
-            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/Caculation%20Factory%20Calss.png">
-              <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/Caculation%20Factory%20Calss.png" width="500" height="">
-            </a>
-          </div >
-          <div style = "position:relative;left:550px;top:-300px">
-            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/AdditionClass.png">
-              <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/AdditionClass.png" width="350" height="">
-            </a>
-          </div >
-          <div style = "position:relative;top:-250px">
-            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/SubtractionClass.png">
+          <div class="row">
+            <div class="column">
+               
+                <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/Caculation%20Factory%20Calss.png" width="400" height="">
+            </div>
+            <div class="column">
+                
+                <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/AdditionClass.png" width="350" height="">
+          </div>
+          </div>
+        
+        <div class="row">
+          <div class="column">
+                
             <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/SubtractionClass.png" width="350" height="">
-            </a>
-          </div >
-          <div style = "position:relative;left:400px;top:-563px">
-            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/MultiplicationClass.png">
+          </div>
+          <div class="column">
             <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/MultiplicationClass.png" width="350" height="">
-            </a>
-          </div >
-          <div style = "position:relative;left:800px;top:-851px">
-            <a href="https://raw.githubusercontent.com/tanner666/OOP/main/images/division_class.png">
+          </div>
+          <div class="column">
             <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/division_class.png" width="350" height="">
-            </a>
-          </div >
-        <div style = "position:relative;top:-850px;">
+          </div>
+        </div>
+          
+        <div>
           <p>
-              1/2.) Abstraction and Interitance: The Calculation Factory Class is a base class for the four calculation classes (addition, subtraction, multiplication, division). Although it 
+            <kbd>1/2.) Abstraction and Interitance:</kbd> The Calculation Factory Class is a base class for the four calculation classes (addition, subtraction, multiplication, division). Although it 
               doesn't contain any abstract methods, The Calculation Factory Class acts similar to an abstract class in that it acts as a blueprint for 
               the four calculation classes (addition, subtraction, multiplication, and division), providing methods those classes all inherit. 
               Each calculation class, inherits the methods of the Calculation Factory Class, allowing all 
               four of them to have the same methods, but for the methods to only be defined at one point in the program. The base class allows for code 
               reusability, while also hiding what the each of its methods do from the individual calculation classes. So the 4 calculation classes can 
               use the methods from the base class, but don't know what they do. <br>
-              3.) Encapsulation: Encapsulation is also demonstrated here in the four calculation classes. Take 
+              <kbd>3.) Encapsulation:</kbd> Encapsulation is also demonstrated here in the four calculation classes. Take 
               the addition class for example. The addition class encapsulates (or houses) its unique get_result() method, as well as the inherited ones. 
               Information within the addition class cannot be accessed directly from outside of the class, but can only be accessed through these 
               methods, specifically the get_result() method. <br>
-              4.) Polymorphism: Finally, polymorphism is also demonstrated in the four calculation classes in their different get_result() methods. Polymorphism refers to having 
+              <kbd>4.) Polymorphism:</kbd> Finally, polymorphism is also demonstrated in the four calculation classes in their different get_result() methods. Polymorphism refers to having 
               many forms, and the get_result() method takes on a different form with the same name in each of the four calculation classes. The point of this is to organize the program, 
               so that when any of the four calculation classes are instantiated, the result will always be returned through a method of the same name.
           </p>
         </div>
+        <div>
+          <h4><strong>Rest of the Program:</strong></h4> 
         </div>
+        <div class="row">
+          <div class="column">
+            <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/calculator_class_collapsed.png" width="350" height="">
+          </div>
+          <div class="column">
+            <img src="https://raw.githubusercontent.com/tanner666/OOP/main/images/history_class_compressed.png" width="350" height="">
+          </div>
+        </div>
+        <p>
+          <kbd>Encapsulation</kbd> is demonstrated in the rest of the classes in the program as well, as each class encapsulates the methods and data 
+          within it. The Calculation class shown above encapsulates its five methods. The History class also encapsulates all of its methods 
+          as well as the history[] list. This means that the Calculation class methods cannot directly access the history list, since the history list 
+          is encapsulated within the History Class. The only way for the Calculation class to access the history list is through History Class methods.
+          <br><br><br><br>
+        </p>
+
       </div>
     </section>
      
