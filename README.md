@@ -3,4 +3,6 @@ This website was created for a school project. The objective of the site is to p
 
 This website also includes an example Python Calculator with a tutorial demonstrating how OOP, SOLID, pylint, and AAA testing are used in the program code.
 
-Website link: http://20.121.248.160/python-calculator.html
+Main page link: http://20.121.248.160/index.html
+Python subpages link: http://20.121.248.160/python-calculator.html
+
